@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <div align="center">
 
 <img src="public/fieldora-logo.jpg" alt="Fieldora — digital farming for India" width="240" />
+=======
+# Fieldora
+
+Fieldora is an agriculture-focused web app designed to help farmers make better decisions around crop planning, expected profitability, irrigation needs, and market awareness. The project is implemented as a modern React + Vite interface named Fieldora, focused on the Indian farming context.
+>>>>>>> 726f6f7a819fcbaa06390e5c6165724f52c19cd1
 
 # Fieldora
 
