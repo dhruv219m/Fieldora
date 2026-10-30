@@ -1,126 +1,138 @@
 <div align="center">
 
-<img src="public/fieldora-logo.jpg" alt="Fieldora — digital farming for India" width="240" />
+<img src="Fieldora/docs/fieldora-readme-hero.svg" alt="Fieldora — Grow smarter. Farm better. A digital farming workspace for crop planning, cost estimates and market awareness." width="100%" />
 
-# Fieldora
+<p>
+  <a href="https://krishi-setu-gules.vercel.app/"><img src="https://img.shields.io/badge/OPEN_LIVE_DEMO-OPEN-24543A?style=for-the-badge&logo=vercel&logoColor=white" alt="Open live demo" /></a>
+  <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=10231B" alt="React 18" />
+  <img src="https://img.shields.io/badge/Vite-6-9B7BF5?style=for-the-badge&logo=vite&logoColor=white" alt="Vite 6" />
+  <img src="https://img.shields.io/badge/JavaScript-ES_Modules-F0DB4F?style=for-the-badge&logo=javascript&logoColor=222222" alt="JavaScript" />
+</p>
 
-### Grow Smarter. Farm Better.
-
-Farm planning tools for clearer crop choices, cultivation estimates and market awareness.
-
-<br />
-
-`AGRITECH` &nbsp;·&nbsp; `CROP INTELLIGENCE` &nbsp;·&nbsp; `FARM PLANNING` &nbsp;·&nbsp; `INDIA`
-
-<br />
-
-<img src="docs/fieldora-landscape.svg" alt="Illustration of Fieldora's Indian farm landscape, field plots and crop data markers" width="100%" />
+<p><strong>Plan with context. Compare your options. Grow with more clarity.</strong></p>
 
 </div>
 
-<br />
+---
 
-<div align="center">
+## Explore Fieldora
 
-<a href="#01-overview">01 Overview</a> &nbsp; / &nbsp;
-<a href="#02-features">02 Features</a> &nbsp; / &nbsp;
-<a href="#03-how-it-works">03 How it works</a> &nbsp; / &nbsp;
-<a href="#04-technology">04 Technology</a> &nbsp; / &nbsp;
-<a href="#05-quick-start">05 Quick start</a> &nbsp; / &nbsp;
-<a href="#06-project-structure">06 Structure</a> &nbsp; / &nbsp;
-<a href="#07-screenshots">07 Screenshots</a> &nbsp; / &nbsp;
-<a href="#08-roadmap">08 Roadmap</a>
+<p align="center">
+  <a href="#overview"><img src="https://img.shields.io/badge/01_OVERVIEW-GO-244B35?style=for-the-badge" alt="Overview" /></a>
+  <a href="#field-tools"><img src="https://img.shields.io/badge/02_FIELD_TOOLS-VIEW-315C40?style=for-the-badge" alt="Field tools" /></a>
+  <a href="#how-it-works"><img src="https://img.shields.io/badge/03_HOW_IT_WORKS-FLOW-47734D?style=for-the-badge" alt="How it works" /></a>
+  <a href="#technology"><img src="https://img.shields.io/badge/04_TECHNOLOGY-STACK-6B8754?style=for-the-badge" alt="Technology" /></a>
+  <a href="#quick-start"><img src="https://img.shields.io/badge/05_QUICK_START-RUN-947C4D?style=for-the-badge" alt="Quick start" /></a>
+  <a href="#project-structure"><img src="https://img.shields.io/badge/06_STRUCTURE-FILES-8B6849?style=for-the-badge" alt="Project structure" /></a>
+  <a href="#screenshots"><img src="https://img.shields.io/badge/07_SCREENSHOTS-VIEW-54736A?style=for-the-badge" alt="Screenshots" /></a>
+  <a href="#roadmap"><img src="https://img.shields.io/badge/08_ROADMAP-NEXT-315C40?style=for-the-badge" alt="Roadmap" /></a>
+</p>
 
-</div>
+<a id="overview"></a>
+## 01 / Overview
 
-<br />
+**Fieldora** (formerly **KrishiSetu**) is an AgriTech web application concept built around the decisions farmers make throughout a growing season. It brings farm profiles, crop suitability comparisons, cultivation estimates and market-planning tools into one interface, with an experience shaped for the Indian farming context.
 
-<table>
-<tr>
-<td width="50%"><b>01 / Overview</b><br />A farmer-focused planning workspace, designed around the practical decisions of a growing season.</td>
-<td width="50%"><b>02 / Features</b><br />Farm profiles, crop suitability, cost estimates, sample mandi prices and a bilingual interface.</td>
-</tr>
-<tr>
-<td><b>03 / How it works</b><br />A simple path from farm details to more informed planning.</td>
-<td><b>04 / Technology</b><br />React, Vite, JavaScript, Recharts and Lucide React.</td>
-</tr>
-<tr>
-<td><b>05 / Quick start</b><br />Install dependencies and run the app locally.</td>
-<td><b>06 / Structure</b><br />A compact client-side application with crop scoring in its own module.</td>
-</tr>
-<tr>
-<td><b>07 / Screenshots</b><br />A ready-to-fill gallery; no app screenshots are included yet.</td>
-<td><b>08 / Roadmap</b><br />Ideas for future development, clearly separate from current capabilities.</td>
-</tr>
-</table>
+The goal is practical: make the assumptions behind a plan easier to see, compare and question — rather than presenting a recommendation as a guarantee.
 
-<br />
+| Built around the farm | Designed for decisions | Made to be approachable |
+|:--|:--|:--|
+| Capture location, land size, soil, irrigation and season. | Compare crop suitability, estimated costs and sale-versus-storage scenarios. | Responsive interface with English/Hindi controls and light/dark themes. |
 
-<a id="01-overview"></a>
-## 01 — Overview
-
-Fieldora (formerly KrishiSetu) is a browser-based AgriTech prototype for the Indian farming context. It brings together a farm profile, rule-based crop suitability scoring, illustrative cultivation economics and sample market prices in one interface. Farmers can explore these tools in English or Hindi.
-
-The experience is designed to make assumptions visible and help people compare planning options. It is a demonstration product: market figures and agronomic estimates are not live or independently verified.
-
-<br />
-
-<a id="02-features"></a>
-## 02 — Field tools
+<a id="field-tools"></a>
+## 02 / Field tools
 
 <table>
-<tr>
-<td width="50%"><h3>Farm overview</h3><p>A dashboard brings together a saved farm profile, illustrative season estimates, crop plan and sample market snapshots.</p></td>
-<td width="50%"><h3>Crop intelligence</h3><p>A transparent rules-based score considers entered soil, season, water availability and location context against crop assumptions. Each recommendation includes reasons for its score.</p></td>
-</tr>
-<tr>
-<td><h3>Profitability planner</h3><p>Crop assumptions include per-acre costs, yield ranges and illustrative prices. The interface uses these to show estimated revenue and profit ranges.</p></td>
-<td><h3>Market awareness</h3><p>A market panel compares illustrative price ranges for Wheat, Soybean, Cotton and Maize, alongside sample buyer offers. These are demo values, not verified live quotes.</p></td>
-</tr>
-<tr>
-<td><h3>Bilingual experience</h3><p>English and Hindi can be selected from the interface. The current Hindi support is partial: navigation titles and select interface labels are translated, while much of the detailed page copy remains English.</p></td>
-<td><h3>Responsive interface</h3><p>Responsive layouts and mobile navigation adapt the workspace to narrower screens.</p></td>
-</tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🌾 Farm overview</h3>
+      <p>A dashboard brings together a farm profile, season estimates, crop-plan snapshots and market-planning panels.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🌱 Crop planner</h3>
+      <p>A transparent, rule-based score compares crop assumptions against soil type, growing season, irrigation and limited location context. Recommendations include the reasons behind the score.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>₹ Cost calculator</h3>
+      <p>Explore illustrative per-acre cultivation costs, yield ranges, estimated revenue and potential profit to understand how assumptions affect a plan.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📊 Market snapshot</h3>
+      <p>Review a sample price panel for Wheat, Soybean, Cotton and Maize. The current values are demonstration data, not a live mandi feed.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🧺 Sell or store</h3>
+      <p>Compare illustrative selling-now and storage scenarios, including estimated costs and potential differences. Future prices are assumptions, not forecasts.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>☀ Weather preview</h3>
+      <p>The interface includes weather-style summary cards for the product experience. They are currently static demonstration values, not a connected forecast service.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🌐 Language and theme</h3>
+      <p>English/Hindi controls and light/dark theme preferences are available. Hindi coverage is currently partial.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📱 Responsive workspace</h3>
+      <p>Layouts and navigation adapt across desktop and smaller screens.</p>
+    </td>
+  </tr>
 </table>
 
-<br />
+<a id="how-it-works"></a>
+## 03 / How it works
 
-<a id="03-how-it-works"></a>
-## 03 — From farm details to a plan
+The core flow moves from a farm profile to a set of planning comparisons.
 
-<div align="center">
+<p align="center">
+  <img src="Fieldora/docs/fieldora-workflow.svg" alt="Fieldora workflow: create a farm profile, enter growing conditions, explore crop recommendations, compare estimates, review sample prices and plan with context." width="100%" />
+</p>
 
-<img src="docs/fieldora-workflow.svg" alt="Six steps: create a farm profile, enter farm details, explore crop recommendations, compare estimated profitability, review market prices, and make an informed plan" width="100%" />
+1. **Create a farm profile** — enter the farm location, land size and plot details.
+2. **Describe growing conditions** — choose soil type, irrigation source and growing season.
+3. **Explore crop suitability** — review ranked crops and the rules that influenced each score.
+4. **Compare the economics** — adjust assumptions and inspect estimated costs, yield and profit ranges.
+5. **Review market scenarios** — use the sample market panel and sell-or-store comparison as planning examples.
+6. **Verify locally** — validate prices, weather and agronomic assumptions with trusted local sources before acting.
 
-</div>
+<a id="technology"></a>
+## 04 / Technology
 
-1. **Create a farm profile** — enter a location and basic farm information.
-2. **Describe your conditions** — add land size, soil, irrigation and season.
-3. **Explore crop recommendations** — review ranked crops and the reasons behind their illustrative scores.
-4. **Compare estimated profitability** — consider assumed costs, yield ranges and prices.
-5. **Review market prices** — compare the sample price panel and buyer offers.
-6. **Plan with context** — use the estimates as a starting point for local verification and discussion.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React 18" />
+  <img src="https://img.shields.io/badge/Vite-6-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite 6" />
+  <img src="https://img.shields.io/badge/JavaScript-ES_Modules-F7DF1E?style=flat-square&logo=javascript&logoColor=222222" alt="JavaScript ES modules" />
+  <img src="https://img.shields.io/badge/Recharts-2-2F855A?style=flat-square" alt="Recharts 2" />
+  <img src="https://img.shields.io/badge/Lucide_React-Icons-F5A623?style=flat-square" alt="Lucide React" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS 4 Vite plugin" />
+</p>
 
-<br />
+| Technology | Role in Fieldora |
+|:--|:--|
+| React 18 | Component-based user interface and application state |
+| Vite 6 | Local development server and production build |
+| JavaScript (ES modules) | Application logic and crop-scoring rules |
+| Recharts 2 | Dashboard data visualizations |
+| Lucide React | Interface icons |
+| Tailwind CSS 4 Vite plugin + project CSS | Styling build setup and application styling |
 
-<a id="04-technology"></a>
-## 04 — Technology
+<a id="quick-start"></a>
+## 05 / Quick start
 
-<table>
-<tr><td><b>React 18</b></td><td>Interface components and client-side application state</td></tr>
-<tr><td><b>Vite 6</b></td><td>Development server and production build</td></tr>
-<tr><td><b>JavaScript (ES modules)</b></td><td>Application and crop-scoring logic</td></tr>
-<tr><td><b>Recharts 2</b></td><td>Dashboard charts</td></tr>
-<tr><td><b>Lucide React</b></td><td>Interface icons</td></tr>
-<tr><td><b>Tailwind CSS 4 Vite plugin</b></td><td>Configured styling build plugin; the interface also uses project CSS</td></tr>
-</table>
+### Prerequisites
 
-<br />
+- Node.js 18 or newer
+- npm 9 or newer
 
-<a id="05-quick-start"></a>
-## 05 — Quick start
+### Run locally
 
-The project configuration does not declare a Node.js engine range. Use a current Node.js LTS release with npm installed; Node.js 18+ and npm 9+ are the documented baseline for this project.
+The React/Vite application lives in the `Fieldora/` directory of this repository.
 
 ```bash
 cd Fieldora
@@ -128,82 +140,76 @@ npm install
 npm run dev
 ```
 
-Vite prints a local development URL in the terminal. To create and preview a production build:
+Open the local URL printed by Vite in your terminal.
+
+### Production build
 
 ```bash
 npm run build
 npm run preview
 ```
 
-<br />
-
-<a id="06-project-structure"></a>
-## 06 — Project structure
+<a id="project-structure"></a>
+## 06 / Project structure
 
 ```text
-Fieldora/
-├── docs/
-│   ├── fieldora-landscape.svg   # README hero illustration
-│   └── fieldora-workflow.svg    # README workflow diagram
-├── public/
-│   ├── fieldora-logo.jpg        # Fieldora logo
-│   ├── hero-field.svg           # Landing-page field illustration
-│   └── krishisetu-logo.png      # Legacy brand asset
-├── src/
-│   ├── cropScoring.js           # Crop assumptions and suitability scoring
-│   ├── main.jsx                 # React views and application flow
-│   └── styles.css               # Interface styling and responsive layouts
-├── index.html                  # Vite HTML entry point and page metadata
-├── package.json                # Scripts and dependencies
-├── package-lock.json           # Locked npm dependency tree
-└── vite.config.js               # React and Tailwind Vite plugins
+repository-root/
+├── README.md
+└── Fieldora/
+    ├── docs/
+    │   ├── fieldora-readme-hero.svg
+    │   ├── fieldora-landscape.svg
+    │   └── fieldora-workflow.svg
+    ├── public/
+    │   ├── fieldora-logo.jpg
+    │   ├── hero-field.svg
+    │   └── krishisetu-logo.png
+    ├── src/
+    │   ├── cropScoring.js
+    │   ├── main.jsx
+    │   └── styles.css
+    ├── index.html
+    ├── package.json
+    ├── package-lock.json
+    └── vite.config.js
 ```
+
+**Application flow:** `index.html` → `src/main.jsx` → `src/cropScoring.js` → browser-rendered Fieldora views.
+
+Farm profiles, the prototype session and interface preferences are stored in the browser using `localStorage`. The current project does not include a server-side application or database.
+
+<a id="screenshots"></a>
+## 07 / Screenshots
+
+Application screenshots have not been included in this README yet. Add genuine captures from the running application to `Fieldora/docs/screenshots/` and embed them here when available. Suggested captures:
+
+- Landing page
+- Farm overview dashboard
+- Crop planner and scoring explanation
+- Cost calculator
+- Sell-or-store comparison
+
+<a id="roadmap"></a>
+## 08 / Roadmap
+
+Potential next steps — **not implemented in the current prototype**:
+
+- Connect verified mandi prices and historical market data.
+- Integrate a real weather provider for farm-level forecasts.
+- Add secure authentication and cloud-backed farm profiles.
+- Expand complete Hindi translation and add regional languages.
+- Add offline access and farm-data export.
+- Improve crop assumptions with trusted, region-specific agronomic datasets.
+
+---
 
 <div align="center">
 
-`index.html` → `src/main.jsx` → `src/cropScoring.js` → browser-rendered Fieldora views
+**Rooted in your land. Growing with your future.**
 
-</div>
-
-Farm profile and preference data are stored in the browser. This prototype has no server-side application, database or remote API integration.
-
-<br />
-
-<a id="07-screenshots"></a>
-## 07 — Screenshots
-
-Screenshots of the running application have not been added to this repository yet. To add genuine app captures, place optimized images in `docs/screenshots/` and replace the notes below with relative image links and descriptive alt text.
-
-```text
-docs/screenshots/
-├── landing.png
-├── farm-overview.png
-└── crop-planner.png
-```
-
-<br />
-
-<a id="08-roadmap"></a>
-## 08 — Roadmap
-
-The following are **potential future improvements**, not features currently implemented:
-
-- Connect verified local mandi price data.
-- Add live weather information for a farm’s location.
-- Expand Hindi translations across the full interface and add more regional languages.
-- Add secure farmer authentication and cloud-based farm data persistence.
-- Explore offline access and farm data export.
-- Improve regional crop intelligence with trusted, locally relevant agronomic data.
-
-<br />
-
-<div align="center">
-
-### A clearer view of the season ahead.
-
-Made for farm planning in India · Fieldora
+Made for farm planning in India · **Fieldora**
 
 </div>
 
 > **Agricultural disclaimer**  
-> Crop scoring and planning logic uses illustrative assumptions for demonstration purposes. It is not certified agricultural advice. Yield, cost, revenue and market figures are estimates or sample data, not guarantees or verified live information. Confirm local conditions, prices and recommendations with trusted agricultural experts and market sources before making decisions.
+> Crop suitability scores, cultivation costs, yield ranges, revenue, profitability, market values and weather-style summaries use illustrative or static demonstration assumptions in this prototype. They are not certified agricultural advice, verified live market quotes, or guaranteed forecasts. Sign-in is a client-side demonstration and does not verify identity. Confirm local conditions and current information with trusted agricultural experts and official sources before making farming or financial decisions.
