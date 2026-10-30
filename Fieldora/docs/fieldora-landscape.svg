@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="440" viewBox="0 0 1440 440" role="img" aria-labelledby="title desc">
+  <title id="title">Fieldora — growing clarity</title>
+  <desc id="desc">A calm Indian farm landscape with layered crop plots, a rising sun and subtle data markers.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e7edda"/><stop offset="1" stop-color="#f7f5ec"/></linearGradient>
+    <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#8ea66b"/><stop offset="1" stop-color="#496d48"/></linearGradient>
+    <pattern id="rows" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(-13)"><path d="M0 0v34" stroke="#d9e0af" stroke-width="2" opacity=".55"/></pattern>
+    <pattern id="rows2" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(14)"><path d="M0 0v30" stroke="#d5be89" stroke-width="2" opacity=".5"/></pattern>
+  </defs>
+  <rect width="1440" height="440" rx="26" fill="url(#sky)"/>
+  <circle cx="1150" cy="118" r="54" fill="#d8b65e" opacity=".92"/>
+  <circle cx="1150" cy="118" r="76" fill="none" stroke="#d8b65e" stroke-opacity=".25"/>
+  <path d="M0 230c170-70 325-34 498 6 200 46 331 20 490-31 170-55 296-47 452 14v221H0Z" fill="#bdc99a"/>
+  <path d="M0 274c214-53 382-18 570 32 179 48 363 50 521 1 123-38 230-43 349-15v148H0Z" fill="url(#hill)"/>
+  <path d="M0 274c214-53 382-18 570 32 179 48 363 50 521 1 123-38 230-43 349-15v148H0Z" fill="url(#rows)" opacity=".8"/>
+  <path d="M0 337c180-40 354-12 522 22 190 38 361 53 546 15 142-30 247-33 372-4v70H0Z" fill="#315c3c"/>
+  <path d="M0 337c180-40 354-12 522 22 190 38 361 53 546 15 142-30 247-33 372-4v70H0Z" fill="url(#rows2)" opacity=".75"/>
+  <path d="M108 440c50-73 80-122 109-192m127 192c33-68 52-122 67-191m113 191c24-62 37-113 45-165m188 165c-6-60-5-108 4-159m205 159c-24-55-37-99-45-146m217 146c-39-60-64-102-83-151" fill="none" stroke="#ecedce" stroke-width="3" opacity=".55"/>
+  <path d="M844 150c-10-19-8-34 8-48m-8 48c19-17 36-18 52-3m-52 3c-2-20 5-33 21-41" fill="none" stroke="#57824e" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#f7f5ec" stroke="#56814f" stroke-width="2"><circle cx="268" cy="254" r="8"/><circle cx="692" cy="305" r="8"/><circle cx="1038" cy="276" r="8"/></g>
+  <g fill="none" stroke="#f7f5ec" stroke-width="1.5" opacity=".85"><path d="M268 246v-40h48"/><path d="M692 297v-43h55"/><path d="M1038 268v-43h48"/></g>
+  <g font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#31553a"><text x="322" y="210">SOIL</text><text x="756" y="257">SEASON</text><text x="1092" y="229">MARKET</text></g>
+  <path d="M0 420c263-18 445 9 688 2 273-8 472-28 752-5v23H0Z" fill="#123d2b" opacity=".88"/>
+</svg>
