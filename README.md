@@ -1,6 +1,6 @@
-# KrishiSetu
+# Fieldora
 
-KrishiSetu is an agriculture-focused web app designed to help farmers make better decisions around crop planning, expected profitability, irrigation needs, and market awareness. The project is implemented as a modern React + Vite interface named Fieldora, focused on the Indian farming context.
+Fieldora is an agriculture-focused web app designed to help farmers make better decisions around crop planning, expected profitability, irrigation needs, and market awareness. The project is implemented as a modern React + Vite interface named Fieldora, focused on the Indian farming context.
 
 ## Overview
 
