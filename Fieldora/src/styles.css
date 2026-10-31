@@ -55,3 +55,30 @@ html[data-theme="dark"] .auth-story h1,html[data-theme="dark"] .auth-story p{col
 html[data-theme="dark"] .boot-loader{background:#0d1712}
 html[data-theme="dark"] .table-footnote{color:#9cad9f}
 @media(prefers-reduced-motion:reduce){.loader-logo-crop{animation:none}}
+/* Final dark-mode pass: sidebar cards, profile row, form choices and branded mark */
+.brand-home{padding:0;border:0;background:transparent;text-align:left;cursor:pointer}
+.brand-home:focus-visible{outline:3px solid #9cc9a9;outline-offset:4px;border-radius:11px}
+html[data-theme="dark"] .brand-logo{background:#e9efe6;border:5px solid #e9efe6;border-radius:13px;box-shadow:0 0 0 1px #38513f,0 5px 14px #0003}
+html[data-theme="dark"] .farm-select{background:#14231b;border-color:#293d31;color:#e5efe8}
+html[data-theme="dark"] .farm-select:hover{background:#192c20;border-color:#3c5943}
+html[data-theme="dark"] .farm-meta strong,html[data-theme="dark"] .profile-copy strong{color:#e5efe8}
+html[data-theme="dark"] .farm-meta small,html[data-theme="dark"] .profile-copy small{color:#a7b8aa}
+html[data-theme="dark"] .farm-select>svg,html[data-theme="dark"] .profile-row>svg{color:#91a695}
+html[data-theme="dark"] .farm-avatar{background:#2b3329;color:#d6c58e}
+html[data-theme="dark"] .profile-row{background:#14231b;border-top-color:#293d31;color:#e5efe8}
+html[data-theme="dark"] .profile-avatar,html[data-theme="dark"] .top-avatar{background:#dfe9dd;color:#31553a}
+html[data-theme="dark"] .sidebar-tip{background:#1b2e22;border:1px solid #2a4231}
+html[data-theme="dark"] .sidebar-tip p,html[data-theme="dark"] .sidebar-tip p strong{color:#bdcbbf}
+html[data-theme="dark"] .sidebar-tip button{color:#a9d3b0}
+html[data-theme="dark"] .reco-context,html[data-theme="dark"] .reco-note,html[data-theme="dark"] .sell-caution{background:#18281e;border-color:#2b4032;color:#b9c9bc}
+html[data-theme="dark"] .reco-context strong,html[data-theme="dark"] .reco-context small,html[data-theme="dark"] .reco-note span,html[data-theme="dark"] .sell-caution p,html[data-theme="dark"] .sell-caution strong{color:#cbd8ce}
+html[data-theme="dark"] .radio-card,html[data-theme="dark"] .choice-card{background:#14231b;border-color:#354b3b;color:#dce8df}
+html[data-theme="dark"] .radio-card:has(input:checked),html[data-theme="dark"] .choice-card:has(input:checked){background:#20382a;border-color:#6aa77a;color:#e7f3e9}
+html[data-theme="dark"] .language-toggle{background:#101c15;border-color:#304638}
+html[data-theme="dark"] .language-toggle button.active{background:#294333;color:#d9f0dd;box-shadow:none}
+html[data-theme="dark"] .settings-nav-item{color:#a7b8aa}
+html[data-theme="dark"] .settings-nav-item.selected{background:#20392a;color:#bde2c4}
+html[data-theme="dark"] .onboard-progress .progress-track{background:#314538}
+html[data-theme="dark"] .onboard-progress .progress-meta{color:#a7b8aa}
+html[data-theme="dark"] .onboard-success{color:#e5efe8}
+html[data-theme="dark"] .farm-select,html[data-theme="dark"] .profile-row,html[data-theme="dark"] .sidebar-tip,html[data-theme="dark"] .radio-card,html[data-theme="dark"] .choice-card{transition:background-color .18s ease,border-color .18s ease,color .18s ease}
