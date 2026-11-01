@@ -1,215 +1,109 @@
-<div align="center">
+# Fieldora — GitHub and Vercel source
 
-<img src="Fieldora/docs/fieldora-readme-hero.svg" alt="Fieldora — Grow smarter. Farm better. A digital farming workspace for crop planning, cost estimates and market awareness." width="100%" />
+The complete redesigned Fieldora interface, its backend, assets, tests and deployment files. The root project is a **standard Next.js app for Vercel**. A copy of the original ChatGPT Sites/Cloudflare source is included in `original-sites-source.zip`, with visible branding updated to Fieldora.
 
-<p>
-  <a href="https://krishi-setu-gules.vercel.app/"><img src="https://img.shields.io/badge/OPEN_LIVE_DEMO-OPEN-24543A?style=for-the-badge&logo=vercel&logoColor=white" alt="Open live demo" /></a>
-  <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=10231B" alt="React 18" />
-  <img src="https://img.shields.io/badge/Vite-6-9B7BF5?style=for-the-badge&logo=vite&logoColor=white" alt="Vite 6" />
-  <img src="https://img.shields.io/badge/JavaScript-ES_Modules-F0DB4F?style=for-the-badge&logo=javascript&logoColor=222222" alt="JavaScript" />
-</p>
+## Start here
 
-<p><strong>Plan with context. Compare your options. Grow with more clarity.</strong></p>
+1. Extract this ZIP. Use the folder containing this `README.md`, `package.json` and `app/` as your project root.
+2. Install **Node.js 24 LTS**, then open a terminal in that folder.
+3. Run:
 
-</div>
-
----
-
-## Explore Fieldora
-
-<p align="center">
-  <a href="#overview"><img src="https://img.shields.io/badge/01_OVERVIEW-GO-244B35?style=for-the-badge" alt="Overview" /></a>
-  <a href="#field-tools"><img src="https://img.shields.io/badge/02_FIELD_TOOLS-VIEW-315C40?style=for-the-badge" alt="Field tools" /></a>
-  <a href="#how-it-works"><img src="https://img.shields.io/badge/03_HOW_IT_WORKS-FLOW-47734D?style=for-the-badge" alt="How it works" /></a>
-  <a href="#technology"><img src="https://img.shields.io/badge/04_TECHNOLOGY-STACK-6B8754?style=for-the-badge" alt="Technology" /></a>
-  <a href="#quick-start"><img src="https://img.shields.io/badge/05_QUICK_START-RUN-947C4D?style=for-the-badge" alt="Quick start" /></a>
-  <a href="#project-structure"><img src="https://img.shields.io/badge/06_STRUCTURE-FILES-8B6849?style=for-the-badge" alt="Project structure" /></a>
-  <a href="#screenshots"><img src="https://img.shields.io/badge/07_SCREENSHOTS-VIEW-54736A?style=for-the-badge" alt="Screenshots" /></a>
-  <a href="#roadmap"><img src="https://img.shields.io/badge/08_ROADMAP-NEXT-315C40?style=for-the-badge" alt="Roadmap" /></a>
-</p>
-
-<a id="overview"></a>
-## 01 / Overview
-
-**Fieldora** (formerly **KrishiSetu**) is an AgriTech web application concept built around the decisions farmers make throughout a growing season. It brings farm profiles, crop suitability comparisons, cultivation estimates and market-planning tools into one interface, with an experience shaped for the Indian farming context.
-
-The goal is practical: make the assumptions behind a plan easier to see, compare and question — rather than presenting a recommendation as a guarantee.
-
-| Built around the farm | Designed for decisions | Made to be approachable |
-|:--|:--|:--|
-| Capture location, land size, soil, irrigation and season. | Compare crop suitability, estimated costs and sale-versus-storage scenarios. | Responsive interface with English/Hindi controls and light/dark themes. |
-
-<a id="field-tools"></a>
-## 02 / Field tools
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🌾 Farm overview</h3>
-      <p>A dashboard brings together a farm profile, season estimates, crop-plan snapshots and market-planning panels.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🌱 Crop planner</h3>
-      <p>A transparent, rule-based score compares crop assumptions against soil type, growing season, irrigation and limited location context. Recommendations include the reasons behind the score.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>₹ Cost calculator</h3>
-      <p>Explore illustrative per-acre cultivation costs, yield ranges, estimated revenue and potential profit to understand how assumptions affect a plan.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>📊 Market snapshot</h3>
-      <p>Review a sample price panel for Wheat, Soybean, Cotton and Maize. The current values are demonstration data, not a live mandi feed.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🧺 Sell or store</h3>
-      <p>Compare illustrative selling-now and storage scenarios, including estimated costs and potential differences. Future prices are assumptions, not forecasts.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>☀ Weather preview</h3>
-      <p>The interface includes weather-style summary cards for the product experience. They are currently static demonstration values, not a connected forecast service.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🌐 Language and theme</h3>
-      <p>English/Hindi controls and light/dark theme preferences are available. Hindi coverage is currently partial.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>📱 Responsive workspace</h3>
-      <p>Layouts and navigation adapt across desktop and smaller screens.</p>
-    </td>
-  </tr>
-</table>
-
-<a id="how-it-works"></a>
-## 03 / How it works
-
-The core flow moves from a farm profile to a set of planning comparisons.
-
-<p align="center">
-  <img src="Fieldora/docs/fieldora-workflow.svg" alt="Fieldora workflow: create a farm profile, enter growing conditions, explore crop recommendations, compare estimates, review sample prices and plan with context." width="100%" />
-</p>
-
-1. **Create a farm profile** — enter the farm location, land size and plot details.
-2. **Describe growing conditions** — choose soil type, irrigation source and growing season.
-3. **Explore crop suitability** — review ranked crops and the rules that influenced each score.
-4. **Compare the economics** — adjust assumptions and inspect estimated costs, yield and profit ranges.
-5. **Review market scenarios** — use the sample market panel and sell-or-store comparison as planning examples.
-6. **Verify locally** — validate prices, weather and agronomic assumptions with trusted local sources before acting.
-
-<a id="technology"></a>
-## 04 / Technology
-
-<p align="center">
-  <img src="https://img.shields.io/badge/React-18-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React 18" />
-  <img src="https://img.shields.io/badge/Vite-6-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite 6" />
-  <img src="https://img.shields.io/badge/JavaScript-ES_Modules-F7DF1E?style=flat-square&logo=javascript&logoColor=222222" alt="JavaScript ES modules" />
-  <img src="https://img.shields.io/badge/Recharts-2-2F855A?style=flat-square" alt="Recharts 2" />
-  <img src="https://img.shields.io/badge/Lucide_React-Icons-F5A623?style=flat-square" alt="Lucide React" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS 4 Vite plugin" />
-</p>
-
-| Technology | Role in Fieldora |
-|:--|:--|
-| React 18 | Component-based user interface and application state |
-| Vite 6 | Local development server and production build |
-| JavaScript (ES modules) | Application logic and crop-scoring rules |
-| Recharts 2 | Dashboard data visualizations |
-| Lucide React | Interface icons |
-| Tailwind CSS 4 Vite plugin + project CSS | Styling build setup and application styling |
-
-<a id="quick-start"></a>
-## 05 / Quick start
-
-### Prerequisites
-
-- Node.js 18 or newer
-- npm 9 or newer
-
-### Run locally
-
-The React/Vite application lives in the `Fieldora/` directory of this repository.
-
-```bash
-cd Fieldora
-npm install
+```sh
+npm ci
+npm run setup:local
+npm run db:migrate
 npm run dev
 ```
 
-Open the local URL printed by Vite in your terminal.
+Open **http://localhost:3000**. Local development uses an actual SQLite database in `.data/fieldora.sqlite`. The setup command creates `.env.local` with a random session secret and will not overwrite an existing file.
 
-### Production build
+## Upload to GitHub
 
-```bash
-npm run build
-npm run preview
+Upload the **extracted project files**, not just the ZIP. `package.json`, `package-lock.json`, `app/`, `lib/`, `public/`, `scripts/`, `migrations/`, `next.config.mjs`, `postcss.config.mjs`, `tsconfig.json` and `vercel.json` must be in the repository root.
+
+Include `.gitignore`, `.env.example` and `.github/`. Do not upload `.env.local`, `.data`, `.next` or `node_modules`. The original source ZIP is an optional backup; it is not needed to deploy the Vercel edition.
+
+If using Git from a terminal:
+
+```sh
+git init
+git add .
+git commit -m "Add Fieldora website"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/fieldora.git
+git push -u origin main
 ```
 
-<a id="project-structure"></a>
-## 06 / Project structure
+Replace `YOUR_USERNAME` with your GitHub username and create an empty repository first.
 
-```text
-repository-root/
-├── README.md
-└── Fieldora/
-    ├── docs/
-    │   ├── fieldora-readme-hero.svg
-    │   ├── fieldora-landscape.svg
-    │   └── fieldora-workflow.svg
-    ├── public/
-    │   ├── fieldora-logo.jpg
-    │   ├── hero-field.svg
-    │   └── krishisetu-logo.png
-    ├── src/
-    │   ├── cropScoring.js
-    │   ├── main.jsx
-    │   └── styles.css
-    ├── index.html
-    ├── package.json
-    ├── package-lock.json
-    └── vite.config.js
-```
+## Deploy to Vercel
 
-**Application flow:** `index.html` → `src/main.jsx` → `src/cropScoring.js` → browser-rendered Fieldora views.
+The website backend needs a persistent database on Vercel. This version supports **Turso through its official SQL-over-HTTP protocol**. Local SQLite is intentionally refused inside Vercel Functions because a local file is not durable hosted storage.
 
-Farm profiles, the prototype session and interface preferences are stored in the browser using `localStorage`. The current project does not include a server-side application or database.
+1. Create a Turso database and obtain its URL and database auth token. See [docs/DEPLOY_TO_VERCEL.md](docs/DEPLOY_TO_VERCEL.md).
+2. Put the Turso settings in your local `.env.local`, keeping your random `SESSION_SECRET`, and run `npm run db:migrate` once against that database.
+3. In Vercel choose **Add New → Project**, import your GitHub repository, and select **Next.js**. Use the repository root; do not select the nested original Sites backup.
+4. Set these environment variables for the production deployment:
 
-<a id="screenshots"></a>
-## 07 / Screenshots
+| Variable | Value |
+|---|---|
+| `DATABASE_PROVIDER` | `turso` |
+| `TURSO_DATABASE_URL` | The HTTPS, `libsql://` or `turso://` URL provided by Turso |
+| `TURSO_AUTH_TOKEN` | Your database auth token |
+| `SESSION_SECRET` | Your own random secret, at least 32 characters |
 
-Application screenshots have not been included in this README yet. Add genuine captures from the running application to `Fieldora/docs/screenshots/` and embed them here when available. Suggested captures:
+5. Deploy. `vercel.json` selects Next.js, `npm ci`, and `npm run build`; `package.json` selects Node.js 24.x. Keep the default Next.js output directory.
 
-- Landing page
-- Farm overview dashboard
-- Crop planner and scoring explanation
-- Cost calculator
-- Sell-or-store comparison
+**Read the step-by-step guide in [docs/DEPLOY_TO_VERCEL.md](docs/DEPLOY_TO_VERCEL.md) if this is your first deployment.** No Vercel or Turso account has been created or connected for you; add your own settings.
 
-<a id="roadmap"></a>
-## 08 / Roadmap
+## What works
 
-Potential next steps — **not implemented in the current prototype**:
+- Redesigned illustrated homepage with three user-controlled farming scenes and English/Hindi switching.
+- Farm onboarding, saved profile, task checklist and dashboard.
+- Rule-based crop planning with assumptions and missing inputs shown.
+- Produce listing creation, preview, editing before bidding, simulated buyer bids and reviewed acceptance.
+- Sell-now-versus-storage calculator, the supplied default figures, cost breakdown, break-even price and saved comparisons.
+- Crop-suitable storage, itemized quotes, demo requests and explicit status transitions.
+- Saved input/rental interests, financial information/checklists and private assistance notes.
+- Low-data view, accessible controls and optional browser read-aloud.
 
-- Connect verified mandi prices and historical market data.
-- Integrate a real weather provider for farm-level forecasts.
-- Add secure authentication and cloud-backed farm profiles.
-- Expand complete Hindi translation and add regional languages.
-- Add offline access and farm-data export.
-- Improve crop assumptions with trusted, region-specific agronomic datasets.
+## Authentication and data portability
 
----
+The Vercel edition uses **signed, HttpOnly browser demo sessions**. It does not trust caller-supplied ChatGPT identity headers or use ChatGPT sign-in. A farm is private to its browser session cookie, stored for up to 30 days. Clearing that cookie, switching browsers/devices, or changing `SESSION_SECRET` starts a separate workspace. This is a demonstration session system, not a production account/login service.
 
-<div align="center">
+The existing hosted Cloudflare database records and credentials are **not** included. A new database starts with the fictional Meera Devi farm. The original source is included unchanged for reference. See [docs/PORTABILITY_NOTES.md](docs/PORTABILITY_NOTES.md) for the exact runtime changes.
 
-**Rooted in your land. Growing with your future.**
+All weather, buyers, bids, quality attributes, market prices, facilities, stock, bookings and payment states are illustrative. Live feeds, real payments, verified partners, delivery fulfilment, photo uploads and production multi-device authentication remain outside this demo.
 
-Made for farm planning in India · **Fieldora**
+## Commands
 
-</div>
+| Command | Purpose |
+|---|---|
+| `npm ci` | Install locked dependencies |
+| `npm run setup:local` | Create local SQLite settings and a random secret |
+| `npm run db:migrate` | Apply the initial schema to the configured database |
+| `npm run dev` | Start the development server |
+| `npm run typecheck` | Check TypeScript |
+| `npm test` | Run business logic, storage and session tests |
+| `npm run build` | Build the standard Next.js production app |
+| `npm run test:integration` | Test the production API after building |
+| `npm start` | Run the production build locally |
 
-> **Agricultural disclaimer**  
-> Crop suitability scores, cultivation costs, yield ranges, revenue, profitability, market values and weather-style summaries use illustrative or static demonstration assumptions in this prototype. They are not certified agricultural advice, verified live market quotes, or guaranteed forecasts. Sign-in is a client-side demonstration and does not verify identity. Confirm local conditions and current information with trusted agricultural experts and official sources before making farming or financial decisions.
+The integration test uses its own temporary SQLite database and random secret; it does not touch your configured farm data or remote database. Vercel runs the production server itself; you do not run `npm start` in its dashboard.
+
+## Main folders
+
+| Path | Contents |
+|---|---|
+| `app/` | Responsive React pages, styling and Next.js API routes |
+| `lib/domain.ts` | Crop rules, calculator, bids, storage quotes and validation |
+| `lib/server.ts` | Signed sessions and database-backed farm workspaces |
+| `lib/storage.ts` | Local SQLite and hosted Turso adapters |
+| `public/` | All images, SVG favicon, display font and font license |
+| `migrations/` | Portable initial SQL schema |
+| `scripts/` | Local setup and schema migration commands |
+| `tests/` | Calculation, validation, session, storage and HTTP integration tests |
+| `docs/` | Deployment, migration and validation notes |
+| `original-sites-source.zip` | Exact original source snapshot, commit `36c570f2bf5917581632cfbe079e51c190e5b371` |
+
+Official references: [Vercel + Next.js](https://vercel.com/docs/frameworks/full-stack/nextjs), [Node.js versions on Vercel](https://vercel.com/docs/functions/runtimes/node-js/node-js-versions), [Turso HTTP reference](https://docs.turso.tech/sdk/http/reference).
