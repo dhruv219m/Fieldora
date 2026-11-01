@@ -9,3 +9,15 @@
 #main{overflow-x:clip}#main:focus{outline:none}
 .assumptions .form-grid .field>label{min-height:32px;display:flex;align-items:flex-end}.hero-copy .hero-kicker,.journey small,.journey p,.range-ticks,.listing-body .lot-mini{color:#5e6b57}.floating-estimate .mini-label,.floating-estimate p,.floating-estimate .mini-tag{color:#52644e}.crop-art>span{color:#76612c}.task{min-height:44px}
 @media(min-width:768px){.footer-bottom{padding-right:150px}}
+
+
+.product-art {
+  overflow: hidden;
+  position: relative;
+}
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
