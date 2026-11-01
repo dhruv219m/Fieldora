@@ -1,0 +1,12 @@
+{
+  "project": "Fieldora",
+  "edition": "Standard Next.js for GitHub and Vercel",
+  "export_date": "2026-11-01",
+  "original_sites_commit": "36c570f2bf5917581632cfbe079e51c190e5b371",
+  "original_archive_sha256": "b782710d58daa14f53839d0438e3f81a4636024075fc8a0e555c941f991e0ea8",
+  "database": "SQLite locally; Turso HTTP on Vercel",
+  "node_major": 24,
+  "secrets_included": false,
+  "hosted_database_records_included": false,
+  "live_site_modified": false
+}
